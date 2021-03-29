@@ -1,0 +1,139 @@
+body {
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  list-style: none;
+  /* width: calc((100% - 50px) / 3); */
+  width: 320px;
+  margin-bottom: 110px;
+}
+
+.gallery-item:not(:nth-child(6n)) {
+  margin-right: 10px;
+}
+
+.gallery-img {
+  display: block;
+  max-height: 300px;
+  transition: transform 150ms linear;
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.photo-card {
+  /* border: 1px solid green; */
+  height: 150px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  /* transition: background-color var(--animation-duration) var(--timing-function); */
+  outline: none;
+  background-image: url('./images/icon-close.svg');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.closeModalBtn:hover {
+  background-color: #fff;
+  background-image: url('./images/icon-close-black.svg');
+}
+
+.stats {
+  /* margin-top: 5px; */
+  padding-left: 10px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.stats-item {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.material-icons {
+  font-size: 16px;
+}
+.btn-search {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
